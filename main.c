@@ -52,7 +52,7 @@ int main(void)
     while (1) {
 
         printf("prompt >> ");
-        scanf("%s", line);
+        fgets(line, sizeof(line), stdin);
         parse(line, argv);
         printf("\n");
 
